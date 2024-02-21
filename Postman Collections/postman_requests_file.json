@@ -1,0 +1,849 @@
+{
+	"info": {
+		"_postman_id": "d49ed574-404f-4d42-9aa2-6f6dc80e5367",
+		"name": "messaging_system_postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://54.234.95.198:8000/api/token/",
+			"id": "7bf049e0-b582-405c-aa62-a859887b3727",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4MjY3NzkwLCJpYXQiOjE3MDgyNjc0OTAsImp0aSI6IjBjM2QyYzc1MTAxZDQxNzdhYzMzN2IwOWNlM2JlNjU0IiwidXNlcl9pZCI6MX0.826yhaEJhiiK5zdg13IQ__oFzaBFovkFWdqdelym_Lo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"A\",\r\n    \"password\": \"@di@C&q2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.95.198:8000/api/token/"
+			},
+			"response": [
+				{
+					"id": "0449ba61-75ff-43e9-9043-1b943c209d41",
+					"name": "http://54.234.95.198:8000/api/token/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4MjY3NzkwLCJpYXQiOjE3MDgyNjc0OTAsImp0aSI6IjBjM2QyYzc1MTAxZDQxNzdhYzMzN2IwOWNlM2JlNjU0IiwidXNlcl9pZCI6MX0.826yhaEJhiiK5zdg13IQ__oFzaBFovkFWdqdelym_Lo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"A\",\r\n    \"password\": \"@di@C&q2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://54.234.95.198:8000/api/token/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 17:31:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODYyMzA3NCwiaWF0IjoxNzA4NTM2Njc0LCJqdGkiOiIzYWZiYjU1N2FhODk0ZGI2OWRmM2RkYTA1YmNhMGU1NyIsInVzZXJfaWQiOjJ9.Sx9VmiXevT5vKksss2587tk5Hqma-jkWbfOp1tc4rdU\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwMjc0LCJpYXQiOjE3MDg1MzY2NzQsImp0aSI6IjUxZjNjNmYzY2QwZDQ5YTU5OTJiOWQ5M2QyOWYyMDEyIiwidXNlcl9pZCI6Mn0.eUNIB9g30CT044uZrNptL9zlCbSP8xy4r0Bp_9GjDYs\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://54.234.95.198:8000/api/message/",
+			"id": "648a87e4-0406-4240-a611-636c0444622f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwMjc0LCJpYXQiOjE3MDg1MzY2NzQsImp0aSI6IjUxZjNjNmYzY2QwZDQ5YTU5OTJiOWQ5M2QyOWYyMDEyIiwidXNlcl9pZCI6Mn0.eUNIB9g30CT044uZrNptL9zlCbSP8xy4r0Bp_9GjDYs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subject\" : \"test message1\",\r\n    \"message\" : \"this is a test message1\", \r\n    \"receiver\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.95.198:8000/api/message/"
+			},
+			"response": [
+				{
+					"id": "cb268490-7271-4cdb-9b8e-b5ecc76f62af",
+					"name": "http://54.234.95.198:8000/api/message/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwMjc0LCJpYXQiOjE3MDg1MzY2NzQsImp0aSI6IjUxZjNjNmYzY2QwZDQ5YTU5OTJiOWQ5M2QyOWYyMDEyIiwidXNlcl9pZCI6Mn0.eUNIB9g30CT044uZrNptL9zlCbSP8xy4r0Bp_9GjDYs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subject\" : \"test message1\",\r\n    \"message\" : \"this is a test message1\", \r\n    \"receiver\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://54.234.95.198:8000/api/message/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 17:34:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "9"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"id\": 23\n}"
+				}
+			]
+		},
+		{
+			"name": "http://54.234.95.198:8000/api/token/",
+			"id": "68f8c0b5-6cf7-495f-9207-01aec8728d8f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4MjY3NzkwLCJpYXQiOjE3MDgyNjc0OTAsImp0aSI6IjBjM2QyYzc1MTAxZDQxNzdhYzMzN2IwOWNlM2JlNjU0IiwidXNlcl9pZCI6MX0.826yhaEJhiiK5zdg13IQ__oFzaBFovkFWdqdelym_Lo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"B\",\r\n    \"password\": \">L@gKw6j\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.95.198:8000/api/token/"
+			},
+			"response": [
+				{
+					"id": "062a8393-f036-47cb-864e-5d419b6a5faf",
+					"name": "http://54.234.95.198:8000/api/token/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4MjY3NzkwLCJpYXQiOjE3MDgyNjc0OTAsImp0aSI6IjBjM2QyYzc1MTAxZDQxNzdhYzMzN2IwOWNlM2JlNjU0IiwidXNlcl9pZCI6MX0.826yhaEJhiiK5zdg13IQ__oFzaBFovkFWdqdelym_Lo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"B\",\r\n    \"password\": \">L@gKw6j\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://54.234.95.198:8000/api/token/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 17:39:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODYyMzU2NCwiaWF0IjoxNzA4NTM3MTY0LCJqdGkiOiI1NjFmODUxNWU4YmY0Y2Q4OWZmOTg5ZWU4NmFmNzgwYSIsInVzZXJfaWQiOjN9.B-B4T6MgC97xTFfWL8JPMu6g-XETe3hwI0-eDBf2CiY\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://54.234.95.198:8000/api/unread_messages/",
+			"id": "9836bb5d-7bb1-46be-ac66-ae1fd6d69532",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.95.198:8000/api/unread_messages/"
+			},
+			"response": [
+				{
+					"id": "58e67de1-a135-45e1-88bd-c71a3a87bc0b",
+					"name": "http://54.234.95.198:8000/api/unread_messages/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://54.234.95.198:8000/api/unread_messages/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 17:40:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "293"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"id\": 22,\n        \"sender\": 2,\n        \"receiver\": 3,\n        \"message\": \"this is a test message\",\n        \"subject\": \"test message\",\n        \"creation_date\": \"2024-02-21T12:57:11.900520+02:00\"\n    },\n    {\n        \"id\": 23,\n        \"sender\": 2,\n        \"receiver\": 3,\n        \"message\": \"this is a test message1\",\n        \"subject\": \"test message1\",\n        \"creation_date\": \"2024-02-21T19:34:00.787883+02:00\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://54.234.95.198:8000/api/all_messages/",
+			"id": "d125989f-c582-4503-95d0-d98f09453219",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.95.198:8000/api/all_messages/"
+			},
+			"response": [
+				{
+					"id": "bd3f8607-0e48-487a-a9f4-bcdf64ffdfe0",
+					"name": "http://54.234.95.198:8000/api/all_messages/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://54.234.95.198:8000/api/all_messages/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 17:41:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "651"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"id\": 1,\n        \"sender\": 2,\n        \"receiver\": 3,\n        \"message\": \"A2B8_\",\n        \"subject\": \"A2B1\",\n        \"creation_date\": \"2024-02-21T12:44:51.894483+02:00\"\n    },\n    {\n        \"id\": 3,\n        \"sender\": 2,\n        \"receiver\": 3,\n        \"message\": \"A2B3_\",\n        \"subject\": \"A2B3\",\n        \"creation_date\": \"2024-02-21T12:44:52.613470+02:00\"\n    },\n    {\n        \"id\": 20,\n        \"sender\": 4,\n        \"receiver\": 3,\n        \"message\": \"C2B1_\",\n        \"subject\": \"C2B1\",\n        \"creation_date\": \"2024-02-21T12:44:58.844133+02:00\"\n    },\n    {\n        \"id\": 22,\n        \"sender\": 2,\n        \"receiver\": 3,\n        \"message\": \"this is a test message\",\n        \"subject\": \"test message\",\n        \"creation_date\": \"2024-02-21T12:57:11.900520+02:00\"\n    },\n    {\n        \"id\": 23,\n        \"sender\": 2,\n        \"receiver\": 3,\n        \"message\": \"this is a test message1\",\n        \"subject\": \"test message1\",\n        \"creation_date\": \"2024-02-21T19:34:00.787883+02:00\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://54.234.95.198:8000/api/unread_messages/",
+			"id": "11110463-9345-4706-87be-ee5b10c419f6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.95.198:8000/api/unread_messages/"
+			},
+			"response": [
+				{
+					"id": "aa3cd0cf-bd8d-4657-86e1-cc5f66c0d3c6",
+					"name": "http://54.234.95.198:8000/api/unread_messages/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://54.234.95.198:8000/api/unread_messages/"
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 17:42:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"detail\": \"No unread messages found.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://54.234.95.198:8000/api/message/23/",
+			"id": "d57f06ad-7cc6-4b4a-89c9-26df7a0846da",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.95.198:8000/api/message/23/"
+			},
+			"response": [
+				{
+					"id": "af5d94b7-34d8-43fb-8847-c55cd659c90d",
+					"name": "http://54.234.95.198:8000/api/message/23/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://54.234.95.198:8000/api/message/23/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 17:43:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "146"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"id\": 23,\n    \"sender\": 2,\n    \"receiver\": 3,\n    \"message\": \"this is a test message1\",\n    \"subject\": \"test message1\",\n    \"creation_date\": \"2024-02-21T19:34:00.787883+02:00\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://54.234.95.198:8000/api/message/23/",
+			"id": "ac2029d1-18b3-4fe6-9e72-ea5f5c439bad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://54.234.95.198:8000/api/message/23/"
+			},
+			"response": [
+				{
+					"id": "a5f66c82-8a72-4463-ab8c-2b896fa3769f",
+					"name": "http://54.234.95.198:8000/api/message/23/",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTQwNzY0LCJpYXQiOjE3MDg1MzcxNjQsImp0aSI6IjNkNTZhZTdhNmUzMTRhMjY4ZWNkYmQ4YzQ5Yjg1YjY5IiwidXNlcl9pZCI6M30.IM0tod0ZNR583mx2BEl11sEvxC_w7IDAvtUjSlOQVRo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://54.234.95.198:8000/api/message/23/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 17:44:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"success\": \"Message 23 deleted successfully.\"\n}"
+				}
+			]
+		}
+	]
+}
