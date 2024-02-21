@@ -1,0 +1,15 @@
+# Ignore all log files
+/*.log
+/error.log
+/*error.log
+# Ignore pycache
+/messaging_app/__pycache__/
+messaging_system/__pycache__/
+*/__pycache__/
+messaging_app/__pycache__
+messaging_system/__pycache__
+messaging_app/__pycache__/*
+messaging_system/__pycache__/*
+messaging_app/migrations
+messaging_app/migrations/
+messaging_app/migrations/*
