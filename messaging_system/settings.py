@@ -89,8 +89,8 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "msg_system_db",
-        'USER': 'barl',
-        'PASSWORD': 'Pa$$w0rd',
+        'USER': 'add user here',
+        'PASSWORD': 'add password here',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
